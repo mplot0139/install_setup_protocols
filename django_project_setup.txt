@@ -1,0 +1,49 @@
+- Install python (latest version) on the system
+
+- Create project folder, 'cd' into it
+
+- create virtual envirenment
+	($ python3 -m venv myvenv)
+	
+- start virtual envirenment
+	Linux($ source myvenv/bin/activate)
+	Win(C:\Users\Name\directory> myvenv\Scripts\activate)
+	
+- setup git for the project 
+	($ git init)
+	($ git config --global user.name "Your Name")
+	($ git config --global user.email you@example.com)
+	
+- create .gitignore file
+	($ nano .gitignore)
+	(# contents
+	*.pyc
+	*~
+	__pycache__
+	myvenv
+	db.sqlite3
+	/static
+	.DS_Store)
+
+- work with git
+	($ git status)
+	($ git add --all .)
+	($ git commit -m "My Django app, first commit")
+	($ git remote add origin https://github.com/<your-github-username>/my-project.git)
+$ git push -u origin master)
+	
+- intstall/update pip
+	((myvenv) ~$ pip install --upgrade pip)
+
+- install django
+	((myvenv) ~$ pip install django~=1.11.0) or ((myvenv) ~$ pip install django)
+
+- start a project
+	((myvenv) ~/projectdir$ django-admin startproject mysite .) 
+	The period in the end is important!
+
+- 
+
+	
+
+
