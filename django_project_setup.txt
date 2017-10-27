@@ -30,7 +30,7 @@
 	($ git add --all .)
 	($ git commit -m "My Django app, first commit")
 	($ git remote add origin https://github.com/<your-github-username>/my-project.git)
-$ git push -u origin master)
+	($ git push -u origin master)
 	
 - intstall/update pip
 	((myvenv) ~$ pip install --upgrade pip)
