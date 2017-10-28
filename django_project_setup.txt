@@ -53,7 +53,7 @@
 	
 - if using sqlite3 - no change necessary
 
-- run migrations
+- run migrations (to create database)
 	(python manage.py migrate)
 	
 - start webserver
