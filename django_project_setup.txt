@@ -42,7 +42,29 @@
 	((myvenv) ~/projectdir$ django-admin startproject mysite .) 
 	The period in the end is important!
 
-- 
+- move to the outer mysite directory
+	($ cd mysite)
+	
+- edit settings.py file
+	- edit language code
+	- edit TIME ZONE (TIME_ZONE = 'Europe/Berlin')
+	- add STATIC_ROOT (STATIC_ROOT = os.path.join(BASE_DIR, 'static'))
+	- add allowed hosts (ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com', 'my_project-<your_username>.c9users.io'])
+	
+- if using sqlite3 - no change necessary
+
+- run migrations
+	(python manage.py migrate)
+	
+- start webserver
+	((myvenv) ~/myproject$ python manage.py runserver)
+	((myvenv) ~/myproject$ python manage.py runserver 0.0.0.0:8080)
+	
+	stop with "ctrl-c"
+	
+	on c9.io: https://your-project-<your cloud9 username>.c9users.io
+	
+
 
 	
 
